@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nakise-service
+spec:
+  selector:
+    app: nakise-api
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP

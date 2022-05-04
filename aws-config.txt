@@ -1,0 +1,3 @@
+[mcdan]
+aws_access_key_id=AKIAQJP4LSRCLP4DU7VM
+aws_secret_access_key=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

@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CreationSuccessResponse" xml:space="preserve">
+    <value>Data created successfully</value>
+  </data>
+  <data name="DuplicateEmail" xml:space="preserve">
+    <value>Email already exists</value>
+  </data>
+  <data name="InvalidExpiredToken" xml:space="preserve">
+    <value>The token is invalid or has expired</value>
+  </data>
+  <data name="InvalidToken" xml:space="preserve">
+    <value>Invalid token</value>
+  </data>
+  <data name="LoginSuccessResponse" xml:space="preserve">
+    <value>Login successful</value>
+  </data>
+  <data name="PasswordResetSuccessfully" xml:space="preserve">
+    <value>Password reset successfully</value>
+  </data>
+  <data name="PasswordSetSuccessfully" xml:space="preserve">
+    <value>Password set successfully</value>
+  </data>
+  <data name="ManagerNotFound" xml:space="preserve">
+    <value>Managers not found for</value>
+  </data>
+  <data name="RetrievalSuccessResponse" xml:space="preserve">
+    <value>Data retrieved successfully</value>
+  </data>
+  <data name="RoleNotFound" xml:space="preserve">
+    <value>Role is not found</value>
+  </data>
+  <data name="TokenConfirmedSuccessfully" xml:space="preserve">
+    <value>Token confirmed successfully</value>
+  </data>
+  <data name="TokenExpired" xml:space="preserve">
+    <value>Token is expired</value>
+  </data>
+  <data name="UnAuthorized" xml:space="preserve">
+    <value>You are unauthorized to perform this process</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>User not found</value>
+  </data>
+  <data name="WrongEmailOrPassword" xml:space="preserve">
+    <value>Wrong email or password provided</value>
+  </data>
+  <data name="ProgrammeNotFound" xml:space="preserve">
+    <value>Program not found</value>
+  </data>
+  <data name="DeletionSuccessResponse" xml:space="preserve">
+    <value>Data deleted successfully</value>
+  </data>
+  <data name="UpdateSuccessResponse" xml:space="preserve">
+    <value>Data updated successfully</value>
+  </data>
+  <data name="DuplicateOrganization" xml:space="preserve">
+    <value>Organization already exists</value>
+  </data>
+  <data name="OrganizationDoesNotExist" xml:space="preserve">
+    <value>Organization does not exist</value>
+  </data>
+  <data name="DeleteSuccessResponse" xml:space="preserve">
+    <value>Data deleted successfully</value>
+  </data>
+  <data name="FileFailedToUpload" xml:space="preserve">
+    <value>The file failed to upload</value>
+  </data>
+  <data name="DuplicateLearningTrack" xml:space="preserve">
+    <value>Learning track already exists</value>
+  </data>
+  <data name="FacilitatorNotFound" xml:space="preserve">
+    <value>Facilitator not found</value>
+  </data>
+  <data name="LearningTrackNotFound" xml:space="preserve">
+    <value>Learning track not found</value>
+  </data>
+  <data name="DuplicateProgrammeSponsor" xml:space="preserve">
+    <value>Sponsor already exists</value>
+  </data>
+  <data name="DuplicateTitle" xml:space="preserve">
+    <value>Title already exists</value>
+  </data>
+  <data name="InvalidActivity" xml:space="preserve">
+    <value>Activity does not exist</value>
+  </data>
+  <data name="FormNotFound" xml:space="preserve">
+    <value>Form does not exist</value>
+  </data>
+  <data name="DuplicateActivity" xml:space="preserve">
+    <value>Activity already exists</value>
+  </data>
+  <data name="ActivityNotFound" xml:space="preserve">
+    <value>Activity Not Found</value>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>End date should be greater than Start date</value>
+  </data>
+  <data name="CallForApplicationCreatedSuccessfully" xml:space="preserve">
+    <value>Call for Application created successfully</value>
+  </data>
+  <data name="CallForApplicationNotFound" xml:space="preserve">
+    <value>Call for Application not found</value>
+  </data>
+  <data name="CallForApplicationUpdatedSuccessfully" xml:space="preserve">
+    <value>Call for Application updated successfully</value>
+  </data>
+  <data name="SurveyNotFound" xml:space="preserve">
+    <value>Survey not found</value>
+  </data>
+  <data name="ProgrammeInProgress" xml:space="preserve">
+    <value>Programme activity is currently in progress</value>
+  </data>
+  <data name="AssessmentNotFound" xml:space="preserve">
+    <value>Assessment not found</value>
+  </data>
+  <data name="EventNotFound" xml:space="preserve">
+    <value>Event not found</value>
+  </data>
+  <data name="LearningTrackIdNotFound" xml:space="preserve">
+    <value>Learning Track with Id: {0} not found</value>
+  </data>
+  <data name="ApplicantDetailNotFound" xml:space="preserve">
+    <value>Applicant details not found</value>
+  </data>
+  <data name="StageNotFound" xml:space="preserve">
+    <value>Stage not found</value>
+  </data>
+  <data name="ApplicantDetailsNotFound" xml:space="preserve">
+    <value>All Applicants are not found</value>
+  </data>
+  <data name="CallForApplicationClosed" xml:space="preserve">
+    <value>This Call for Application is closed.</value>
+  </data>
+  <data name="FormLinkNotAvailable" xml:space="preserve">
+    <value>Form is closed</value>
+  </data>
+</root>

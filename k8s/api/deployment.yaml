@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nakise-api
+  labels:
+    app: nakise-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nakise-api
+  template:
+    metadata:
+      labels:
+        app: nakise-api
+    spec:
+      containers:
+        - name: nakise
+          image: prunedge/nakise-api:v0
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 80
+          env:
+            - name: ASPNETCORE_URLS
+              value: http://+:80
