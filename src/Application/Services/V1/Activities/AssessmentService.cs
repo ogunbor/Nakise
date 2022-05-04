@@ -460,5 +460,11 @@ namespace Application.Services.V1.Activities
                 throw new RestException(HttpStatusCode.NotFound, $"{ResponseMessages.ProgrammeInProgress}");
         }
         #endregion
+        public async Task<AssessmentResultDto> GetAssessmentResultAsync(AssessmentResultParameter id)
+        {
+            var response = await _httpClient.GetAsJson($"/api/v1/assessment/session/{id}/result", _configuration);
+
+            return await response.ReadContentAs<AssessmentResultDto>();
+        }
     }
 }

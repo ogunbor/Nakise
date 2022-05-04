@@ -16,5 +16,6 @@ namespace Application.Contracts.V1.Activities
         Task<SuccessResponse<string>> CompleteAssessmentSession(Guid approvedApplicantId, SessionCompletionDto model);
         Task<SuccessResponse<AnswersPreviewDto>> GetAssessmentSessionSummary(Guid approvedApplicantId, SessionCompletionDto model);
         Task<SuccessResponse<CreateQuestionResponseDto>> CreateSingleQuestion(Guid id, CreateQuestionDto input);
+        Task<AssessmentResultDto> GetAssessmentResultAsync(AssessmentResultParameter id);
     }
 }

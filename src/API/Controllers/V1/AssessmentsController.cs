@@ -121,5 +121,12 @@ namespace API.Controllers.V1
 
             return Ok(response);
         }
+
+        [HttpGet("applicant/session/{id}/result")]
+        public async Task<IActionResult> GetAssessmentResult(AssessmentResultParameter id)
+        {
+            var response = await _service.AssessmentService.GetAssessmentResultAsync(id);
+            return Ok(response);
+        }
     }
 }

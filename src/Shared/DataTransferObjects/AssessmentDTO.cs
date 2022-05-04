@@ -302,4 +302,66 @@ namespace Shared.DataTransferObjects
         [JsonPropertyName("body")]
         public string Body { get; set; }
     }
+
+    public record Option
+    {
+        public string Id { get; set; }
+        public string Body { get; set; }
+    }
+
+
+    public record Question
+    {
+        [JsonPropertyName("id")]
+        public string Id { get; set; }
+        [JsonPropertyName("body")]
+        public string Body { get; set; }
+        [JsonPropertyName("type")]
+        public string Type { get; set; }
+        [JsonPropertyName("options")]
+        public IEnumerable<Option> Options { get; set; }
+
+    }
+    public record QuestionAnswer
+    {
+        [JsonPropertyName("question")]
+        public Question Question { get; set; }
+        [JsonPropertyName("answer")]
+        public string Answer { get; set; }
+        [JsonPropertyName("option_selected")]
+        public string OptionSelected { get; set; }
+        [JsonPropertyName("score")]
+        public string Score { get; set; }
+    }
+    public record AssessmentResultDto
+    {
+        [JsonPropertyName("id")]
+        public string Id { get; set; }
+        [JsonPropertyName("assessment")]
+        public AssessmentResult Assessment { get; set; }
+        [JsonPropertyName("questions")]
+        public List<QuestionAnswer> Questions { get; set; }
+        [JsonPropertyName("name")]
+        public string Name { get; set; }
+        [JsonPropertyName("email")]
+        public string Email { get; set; }
+        [JsonPropertyName("reference")]
+        public string Reference { get; set; }
+        [JsonPropertyName("retake_count")]
+        public int RetakeCount { get; set; }
+        [JsonPropertyName("score")]
+        public string Score { get; set; }
+        [JsonPropertyName("score_percentage")]
+        public int ScorePercentage { get; set; }
+        [JsonPropertyName("status")]
+        public string Status { get; set; }
+        [JsonPropertyName("grade_status")]
+        public string GradeStatus { get; set; }
+        [JsonPropertyName("created_at")]
+        public DateTime CreatedAt { get; set; }
+        [JsonPropertyName("updated_at")]
+        public DateTime UpdatedAt { get; set; }
+        [JsonPropertyName("account")]
+        public string Account { get; set; }
+    }
 }
